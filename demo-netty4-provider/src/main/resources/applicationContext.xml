@@ -10,18 +10,18 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!--<context:property-placeholder location="classpath*:config.properties"/>-->
-    <context:component-scan base-package="com.clcc"/>
+    <context:component-scan base-package="com.cslc"/>
 
-    <dubbo:application name="clcc-tcs" owner="chilly" organization="clcc" logger="slf4j"/>
+    <dubbo:application name="cslc-tcs" owner="chilly" organization="cslc" logger="slf4j"/>
 
-    <dubbo:registry protocol="zookeeper" address="192.168.99.100:2181"/>
+    <dubbo:registry protocol="zookeeper" address="172.26.14.135:2181"/>
 
     <dubbo:protocol accesslog="true" name="dubbo" port="20880" server="netty4"/>
 
-    <dubbo:annotation package="com.clcc"/>
+    <dubbo:annotation package="com.cslc"/>
 
-    <dubbo:service interface="com.clcc.rpc.provider.UserService" ref="userService" protocol="dubbo"
-        version="1.0.0" group="daily"/>
+    <dubbo:service interface="com.cslc.rpc.provider.UserService" ref="userService" protocol="dubbo"
+                   version="1.0.0" group="daily"/>
 
 
 </beans>

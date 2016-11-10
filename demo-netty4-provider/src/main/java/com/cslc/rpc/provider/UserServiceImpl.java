@@ -1,4 +1,4 @@
-package com.clcc.rpc.provider;
+package com.cslc.rpc.provider;
 
 import org.springframework.stereotype.Service;
 

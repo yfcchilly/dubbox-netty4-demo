@@ -1,4 +1,4 @@
-package com.clcc.rpc.provider;
+package com.cslc.rpc.provider;
 
 /**
  * Created by fanchao on 2016/10/27.
